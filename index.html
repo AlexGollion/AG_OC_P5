@@ -12,21 +12,13 @@
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" media="all">
 	<meta charset="UTF-8">
-	<script>
-		if (window.innerWidth > 900)
-		{
-			document.write('<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">><\/script>')
-			document.write('<script src="./assets/maugallery.js">><\/script>')
-			document.write('<script src="./assets/scripts.js">><\/script>')
-		}
-		else
-		{
-			document.write('<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer>><\/script>')
-			document.write('<script src="./assets/maugallery.js" defer>><\/script>')
-			document.write('<script src="./assets/scripts.js" defer>><\/script>')
-		}
-	</script>
-
+	<script async src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<link rel="preload" href="https://code.jquery.com/jquery-3.4.1.min.js" as="script">
+	<link rel="preload" href="./assets/maugallery.js" as="script">
+	<link rel="preload" href="./assets/scripts.js" as="script">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js"></script>
+	<script src="./assets/scripts.js"></script>
 </head>
 <body>
 	<header class="top-header">
