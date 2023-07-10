@@ -5,22 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Site de Nina Carducci, photographe de Bordeaux. Fait les concerts, mariages, portraits et les entreprises">
 
-	<div hidden itemscope itemtype="https://schema.org/LocalBusiness">
-		<h1 itemprop="name">Nina Carducci, photographe</h1>
-		<p itemprop="description">Site de Nina Carducci, photographe de Bordeaux</p>
-		<img itemprop="image" src="./assets/images/nina.webp" alt="Photo portrait de nina carducci">
-		<h2>Contact</h2>
-		<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br />
-            <span itemprop="postalCode">33200</span>
-            <span itemprop="addressLocality">Bordeaux</span>,
-            <meta itemprop="addressCountry" content="FR" />France
-        </span><br />
-        <span itemprop="telephone">05 56 67 78 89</span>
-		<h2>Horraire d'ouverture</h2>
-		<meta itemprop="openingHours" content="Mo,Tu,We,Th,Fr 10:00-19:00">
-		<span itemprop="priceRange">50€ - 400€</span>
-	</div>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org/LocalBusiness",
+		"name": "Nina Carducci, photographe",
+		"description": "Site de Nina Carducci, photographe de Bordeaux. Fait les concerts, mariages, portraits et les entreprises",
+		"image": "./assets/images/nina.webp",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Bordeaux, France",
+			"postalCode": "33200",
+			"streetAddress": "68 avenue Alsace-Lorraine"
+		},
+		"openingHours": "Mo-Fr 10:00-19:00",
+		"telephone": "05 56 67 78 89",
+		"priceRange": "50€-400€",
+		"url": "https://nina-carducci.github.io/"
+	}
+	</script>
 
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:site" content="https://nina-carducci.github.io/"/>
